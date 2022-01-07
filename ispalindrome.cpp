@@ -3,14 +3,10 @@
 #include <vector>
 using namespace std;
 
-bool palPal(string x);
-
 bool is_Palindrome(int test){
     std::string str = std::to_string(test);
-    return palPal(str);  
-}
-bool palPal(string str){
-    int length =0;
+    
+     int length =0;
     switch (str.length()){
         case 1:
             return true;
@@ -36,4 +32,5 @@ bool palPal(string str){
             }
             break;
     }
+    
 }
