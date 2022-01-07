@@ -11,17 +11,4 @@ double* getDoubles(int size){
     return temp;      
 }
 
-int main(){
-    int x = 11;
-    double* arr= getDoubles(x);   
 
-    for(int i=0 ; i<x; i++)
-        cout << arr[i] << endl;
-    
-    arr = NULL;
-
-    delete[] arr;
-    
-    return 0;
-
-}
