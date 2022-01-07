@@ -5,31 +5,23 @@
 using namespace std;
 
 double* getDoubles(int size){
-    double* temp = new double[size];  //temp is pointer to an array
+    double* temp = new double[size];  
     for(int i=0 ; i<size; i++)
         temp[i]= (double) (i+1)/3.0;
-    return temp;      //temp is an address
+    return temp;      
 }
 
 int main(){
     int x = 11;
-    double* arr= getDoubles(x);   //arr is a pointer to an array
+    double* arr= getDoubles(x);   
 
     for(int i=0 ; i<x; i++)
         cout << arr[i] << endl;
-
-     /*  iterating does not work for this array
-    for (int n : arr )
-        cout << arr[n] << endl;
-    */
-
+    
     arr = NULL;
 
     delete[] arr;
-
     
-    
-
     return 0;
 
 }
