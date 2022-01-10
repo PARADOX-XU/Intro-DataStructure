@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-bool is_Palindrome(int test)
+bool is_Palindrome(str test)
 {
     for(int i = 0; i <= str.length()-1; i++)
     {
