@@ -1,15 +1,15 @@
 #include <string>
 using namespace std;
 
-      bool ShowTicket::is_sold(){         
+      bool is_sold(){         
             return sold;
         }
 
-      void ShowTicket::sell_seat(){ 
+      void sell_seat(){ 
             sold = true;
             }
 
-      string ShowTicket::print_ticket(){
+      string print_ticket(){
             if (sold)
                 return row + " "+ seat + " sold";
             else
