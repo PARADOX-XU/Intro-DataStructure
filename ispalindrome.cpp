@@ -4,7 +4,7 @@
 using namespace std;
 
 bool isPalindrome(int test) {
-    int copyO=test;
+    int copy=test;
     int reverseNumber = 0;
     int flag=0; 
     
@@ -15,10 +15,10 @@ bool isPalindrome(int test) {
         return true;
 
     while (copy != 0){    
-        int temp = copy%10;
+        int temp = copy % 10;
         
         if (flag == 0)
-            flag =1;   
+            flag = 1;   
         else 
             reverseNumber *= 10;
        
