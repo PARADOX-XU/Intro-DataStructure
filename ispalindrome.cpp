@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-bool isPalindrome(int test) {
+bool is_Palindrome(int test) {
     int copy=test;
     int reverseNumber = 0;
     int flag=0; 
