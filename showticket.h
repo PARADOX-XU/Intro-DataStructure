@@ -32,3 +32,9 @@ class ShowTicket {
             else
                 return row + " "+ seat + " is available";
         }
+ShowTicket::ShowTicket(string r, string s){
+    row = r;
+    seat = s;
+    sold = false;
+
+}
