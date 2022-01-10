@@ -3,24 +3,24 @@
 #include <iomanip>
 using namespace std;
 
-int binary_search( int val, int srtArr[], int srtArrSize){
+int binary_search( int search_value, int lst[], int elements){
     int low, high, mid;
     int ind;
     int counter=0;
     bool found = false;
     low = 0;
-    high = srtArrSize;
+    high = elements;
   
     while (( found == false) && (low<=high) ){
         counter++;
         mid = (low + high)/2;
-        if (srtArr[mid] == val){
+        if (lst[mid] == search_value){
             ind = mid;
             found = true;
         }
-        else if (val < srtArr[mid])
+        else if (search_value < lst[mid])
             high = mid -1;
         else 
-            low = mid + 1;
-       
+            low = mid + 1;   
     }
+}
