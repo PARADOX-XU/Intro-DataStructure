@@ -23,4 +23,6 @@ int binary_search( int search_value, int lst[], int elements){
         else 
             low = mid + 1;   
     }
+       return counter;
+
 }
